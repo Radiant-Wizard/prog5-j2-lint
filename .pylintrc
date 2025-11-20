@@ -22,7 +22,7 @@ persistent=yes
 
 prefer-stubs=no
 
-y-version=3.12
+py-version=3.12
 
 recursive=no
 
@@ -33,6 +33,8 @@ unsafe-load-any-extension=no
 
 
 [BASIC]
+
+variable-rgx=[a-z][a-z0-9_]*$
 
 argument-naming-style=camelCase
 attr-naming-style=camelCase
@@ -61,15 +63,15 @@ good-names=i,
 good-names-rgxs=
 include-naming-hint=no
 inlinevar-naming-style=any
-method-naming-style=snake_case
+method-naming-style=camelCase
 
-odule-naming-style=snake_case
-ame-group=
-o-docstring-rgx=^_
+module-naming-style=snake_case
+name-group=
+no-docstring-rgx=^_
 
 property-classes=abc.abstractproperty
 
-ariable-naming-style=snake_case
+variable-naming-style=camelCase
 [CLASSES]
 
 check-protected-access-in-special-methods=no
@@ -234,7 +236,6 @@ disable=raw-checker-failed,
         use-implicit-booleaness-not-comparison-to-string,
         use-implicit-booleaness-not-comparison-to-zero,
         missing-docstring,
-        invalide-name,
         
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
