@@ -30,7 +30,8 @@ source-roots=
 
 unsafe-load-any-extension=no
 
-
+[MASTER]
+ignore=.venv,.env,env,build,dist,migrations
 
 [BASIC]
 
